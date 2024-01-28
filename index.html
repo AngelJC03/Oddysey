@@ -4,85 +4,130 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width = device-width, initial-scale = 1.0">
     <title>Oddyset.Dept</title>
-    <style>
-        body {
-            background-color: #EEEEEE;
-            color: #000000;
-            font-family: sans-serif;
-            font-size: 1em;
-            text-align: center;
-            margin: 0; /* Remove default body margin */
-        }
-        .square {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            width: 100vw;
-            height: 8vh;
-            background-color: #FFFFFF; 
-            border: 5px;
-        }
-        .image {
-            width: 10vw;
-            height: 10vh;
-            position: absolute;
-            display: block;
-            top: 4%;
-            left: 4%;
-            transform: translate(-50%, -50%);
-            border: 5px;
-            object-fit: contain;
-        }
-        .button-container {
-            position: absolute;
-            top: 4%;
-            left: 40%;
-            transform: translate(-50%, -50%);
-        }
-        .button {
-            padding: 1vw 2vw;
-            font-size: 1em;
-            color: #000000;
-            background-color: #ffffff;
-            border: none;
-            cursor: pointer;
-        }
-        .search-bar {
-            position: absolute;
-            top: 2.5%;
-            left: 75%;
-            transform: translate(-50%, -50%);
-            margin-top: 1vh;
-            width: 10vw;
-            padding: 1vw;
-            font-size: 1em;
-        }
-        .cart {
-            width: 6vw;
-            height: 6vh;
-            position: absolute;
-            display: block;
-            top: 4%;
-            left: 90%;
-            transform: translate(-50%, -50%);
-            border: 5px; /* Specify a border style */
-            cursor: pointer; /* Change cursor on hover to indicate it's clickable */
-            background-color: transparent; /* Make the background transparent */
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="square"></div>
-    <img class="image" src="Star_odyssey.png" alt="Image of stars">
-    <div class="button-container">
-        <button class="button">Shop</button>
-        <button class="button">About</button>
-        <button class="button">Contact Us</button>
-    </div>
-    <input type="text" class="search-bar" placeholder="Search an item">
-    <button class="cart" onclick="openShoppingCart()">
+<div class="header">
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="odyssey_logo.png" alt="Image of star" width="200" height="100">
+        </div>
+        <nav>
+            <ul id ="MenuItems">
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><input type="text" class="search-bar" placeholder="Search an item"></li>
+            </ul>
+        </nav>  
         <img src="Cart_icon.png" alt="Shopping Cart" width="25" height="25">
-    </button>
+        <img src="menu.png" alt="Menu" class="menu-icon" onclick="menutoggle()">
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <h1>Odyssey</h1>
+            <p>Same path, different journey. <br>
+            Success is determined by the progress <br>
+            through your journey. <br>
+            Let your odyssey shape you.</p>
+            <a href="#" class="btn">Explore Now &#8594;</a>
+        </div>
+    </div>
+    </div>
+</div>
+    
+    <div class="categories">
+        <h2>Featured Products</h2>
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="black_hoodie_odyssey.png" alt="Odyssey Logo" width="250" height="300">
+                    <h3>Black Printed Hoodie</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                     <p>(price)</p>
+                </div>
+                <div class="col-3">
+                    <img src="Brown_hoodie_odyssey.png" alt="Odyssey Logo" width="250" height="300">
+                    <h4>Brown Printed Hoodie</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                     <p>(price)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download The Odyssey App</h3>
+                    <p>App is compatible for Android and IOS.</p>
+                    <div class="app-logo">
+                        <img src="app-store.png" alt="App Store Logo" width="100" height="50">
+                        <img src="play-store.png" alt="Google Play Logo" width="100" height="50">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="odyssey_logo.png" alt="Odyssey Logo" width="100" height="100">
+                    <p>Same Journey, different paths. <br>
+                    Our purpose is to provide the best quality <br>
+                    clothing for every audience.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Social Medias</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>TikTok</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p class="col-2">Made by Oddyset.Dept</p>
+            </div> 
+        </div>
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
 </body>
 </html>

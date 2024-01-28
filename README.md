@@ -5,5 +5,5 @@ demonstrate my ability to design and create user interfaces, as well as providin
 front-end developers seeking inspiration. The webpage will showcase the variety of items Odyssey has for sale. 
 This page is strictly intended to be a template, therefore there are no methods for handling transactions in this repository.
 
-Odyssey Social Media:
+Social Media:
 Instagram - Odyssey.dept
