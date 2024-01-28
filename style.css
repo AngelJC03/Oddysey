@@ -214,7 +214,7 @@ ul {
 
 .search-bar {
     margin-top: 1vh;
-    margin-right: 20px;
+    margin-right: 10px;
     border: 5px;
 
 }
@@ -270,6 +270,10 @@ ul {
         margin: 10px 0;
         color: #000000;
     }
+    .search-bar {
+        width: 15vw; /* Adjust search bar width */
+    
+    }
 
 }
 
@@ -306,7 +310,8 @@ ul {
     }
 
     .search-bar {
-        width: 90%; /* Adjust search bar width */
+        width: 15vw; /* Adjust search bar width */
+        margin-left: -15px;
     }
 
     .cart {
@@ -354,7 +359,8 @@ ul {
     }
 
     .search-bar {
-        width: 80%; /* Adjust search bar width */
+        width: 15vw; /* Adjust search bar width */
+        margin-left: -30px;
     }
 
     .cart {
