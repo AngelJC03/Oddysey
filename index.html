@@ -11,13 +11,14 @@
             font-family: sans-serif;
             font-size: 1em;
             text-align: center;
+            margin: 0; /* Remove default body margin */
         }
         .square {
-        	position: absolute;
-        	top: 0;
-			left: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
             right: 0;
-        	width: 100vw;
+            width: 100vw;
             height: 8vh;
             background-color: #FFFFFF; 
             border: 5px;
@@ -27,17 +28,37 @@
             height: 10vh;
             position: absolute;
             display: block;
-            top: 4%; /* Adjust top value to move the text down */
-            left: 4%; /* Center the text horizontally */
+            top: 4%;
+            left: 4%;
             transform: translate(-50%, -50%);
-            border: 5px; /* Add a border style */
-	    object-fit: contain;
+            border: 5px;
+            object-fit: contain;
         }
-    
+        .button-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #3498db;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <div class="square"></div>
     <img class="image" src="Star_odyssey.png" alt="Image of stars">
+    <div class="button-container">
+        <button class="button">Shop</button>
+        <button class="button">About</button>
+        <button class="button">Contact Us</button>
+    </div>
 </body>
 </html>
