@@ -7,38 +7,79 @@
     <style>
         body {
             background-color: #EEEEEE;
-            color: #ffffff;
+            color: #000000;
             font-family: sans-serif;
-            font-size: 1.5em;
+            font-size: 1em;
             text-align: center;
+            margin: 0; /* Remove default body margin */
         }
         .square {
-        	position: absolute;
-        	top: 0;
-			left: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
             right: 0;
-        	width: 100vw;
+            width: 100vw;
             height: 8vh;
             background-color: #FFFFFF; 
             border: 5px;
         }
-        .square2 {
-        	position: absolute;
-            top: 8vh;
-            left: 0;
-            right: 0;
-        	width: 100vw;
-            height: 30vh;
-            background-color: #E5E5E5;
-            border-bottom-right-radius: 200px;
-            border-bottom-left-radius: 200px;
+        .image {
+            width: 10vw;
+            height: 10vh;
+            position: absolute;
+            display: block;
+            top: 4%;
+            left: 4%;
+            transform: translate(-50%, -50%);
             border: 5px;
+            object-fit: contain;
         }
-    
+        .button-container {
+            position: absolute;
+            top: 4%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+        }
+        .button {
+            padding: 1vw 2vw;
+            font-size: 1em;
+            color: #000000;
+            background-color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+        .search-bar {
+            position: absolute;
+            top: 2.5%;
+            left: 75%;
+            transform: translate(-50%, -50%);
+            margin-top: 1vh;
+            width: 10vw;
+            padding: 1vw;
+            font-size: 1em;
+        }
+        .cart {
+            width: 10vw;
+            height: 10vh;
+            position: absolute;
+            display: block;
+            top: 4%;
+            left: 85%;
+            transform: translate(-50%, -50%);
+            border: 5px;
+            object-fit: contain;
+        }
     </style>
 </head>
 <body>
     <div class="square"></div>
-	<div class="square2"></div>
+    <img class="image" src="Star_odyssey.png" alt="Image of stars">
+    <div class="button-container">
+        <button class="button">Shop</button>
+        <button class="button">About</button>
+        <button class="button">Contact Us</button>
+    </div>
+    <input type="text" class="search-bar" placeholder="Search an item">
+    <img class="cart" src="Cart_icon.png" alt="Image of shopping cart">
 </body>
 </html>
