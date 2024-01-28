@@ -239,8 +239,36 @@ ul {
         color: #a0a0a0;
     }
     .menu-icon {
+        margin-right: 20px;
         display: block;
         cursor: pointer;
+    }
+    .col-3 .rating {
+        width: 28px;
+        color: #ff9800;
+        font-size: 12px;
+        position: relative;
+        margin-left: 100px;
+    }
+    .col-3 h3 {
+        text-align: center;
+        position: relative;
+        left: 5px;
+        margin: 10px 0;
+        color: #000000;
+    }
+    .col-3 p {
+        text-align: center;
+        position: relative;
+        margin-left: 30px;
+        color: #000000;
+    }
+    -col-3 h4 {
+        text-align: center;
+        position: relative;
+        left: 5px;
+        margin: 10px 0;
+        color: #000000;
     }
 
 }
@@ -257,5 +285,16 @@ ul {
     }
     .header .row {
         margin-top: 20px;
+    }
+    .menu-icon {
+        width: 28px;
+        margin-right: 20px;
+        display: block;
+        cursor: pointer;
+    }
+    .col-3 .rating {
+        color: #ff9800;
+        font-size: 12px;
+        position: relative;
     }
 }
