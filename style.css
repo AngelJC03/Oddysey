@@ -401,3 +401,101 @@ ul {
 
     /* Add more adjustments as needed for smaller screens */
 }
+
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 0.7em; /* Adjust font size for smaller screens */
+    }
+
+    .search-bar {
+        width: 15vw; /* Adjust search bar width */
+        margin-left: -15px;
+    }
+
+    .cart {
+        width: 90%; /* Adjust cart width */
+    }
+
+    .col-2 h1 {
+        font-size: 30px; /* Adjust heading font size */
+    }
+
+    .col-3 .rating {
+        width: 28px;
+        color: #ff9800;
+        font-size: 12px;
+        position: relative;
+        margin-left: 40px;
+    }
+    .col-3 h3 {
+        text-align: center;
+        position: relative;
+        left: 5px;
+        margin: 10px 0;
+        color: #000000;
+    }
+    .col-3 p {
+        text-align: center;
+        position: relative;
+        margin-left: 60px;
+        color: #000000;
+    }
+    .col-3 h4 {
+        text-align: center;
+        position: relative;
+        left: 5px;
+        margin: 10px 0;
+        color: #000000;
+    }
+    /* Add more adjustments as needed for 500px screens */
+}
+
+
+@media only screen and (max-width: 400px) {
+    body {
+        font-size: 0.8em; /* Adjust font size for smaller screens */
+    }
+
+    .search-bar {
+        width: 15vw; /* Adjust search bar width */
+        margin-left: -30px;
+    }
+
+    .cart {
+        width: 80%; /* Adjust cart width */
+    }
+
+    .col-2 h1 {
+        font-size: 40px; /* Adjust heading font size */
+    }
+    
+    .col-3 .rating {
+        width: 28px;
+        color: #ff9800;
+        font-size: 12px;
+        position: relative;
+        margin-left: 20px;
+    }
+    .col-3 h3 {
+        text-align: center;
+        position: relative;
+        left: 5px;
+        margin: 10px 0;
+        color: #000000;
+    }
+    .col-3 p {
+        text-align: center;
+        position: relative;
+        margin-left: 30px;
+        color: #000000;
+    }
+    .col-3 h4 {
+        text-align: center;
+        position: relative;
+        left: 5px;
+        margin: 10px 0;
+        color: #000000;
+    }
+
+    /* Add more adjustments as needed for smaller screens */
+}
