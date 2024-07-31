@@ -4,9 +4,7 @@
 Social Media:
 Instagram - Odyssey.dept
 
-The purpose of this repository is to showcase a simple template for an 
-online store for the clothing line "Odyssey". The html consists of one 
-page with a limited number of featured items, as well as buttons 
-and a search bar with no functionality. The functionality to create working 
-buttons and a search bar is fairly simple. However, purpose of this project 
-was merely to practice designing a user interface. 
+A simple, one page template for an online store dedicated 
+to the brand "Odyssey". The page was created using HTML/CSS
+concepts and tools and showcases an example template for an 
+e-commerce store. 
